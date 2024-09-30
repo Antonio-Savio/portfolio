@@ -1,0 +1,67 @@
+.section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.section h1{
+    border-bottom: 2px solid #8c2a99;
+}
+
+.section p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.container{
+    margin: 30px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+
+.icon{
+    padding: 5px;
+    background-color: #fff;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section.light .icon{
+    background-color: var(--main-dark);
+}
+
+.icon svg{
+    font-size: 40px;
+    color: #18171c;
+    transition: 0.3s ease;
+}
+
+.section.light .icon svg{
+    color: var(--main-light);
+}
+
+.icon svg:hover{
+    transform: scale(1.1);
+}
+
+.nome{
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}

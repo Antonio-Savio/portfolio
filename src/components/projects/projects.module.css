@@ -1,0 +1,72 @@
+.section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    min-height: 50vh;
+}
+
+.section h1{
+    border-bottom: 2px solid #8c2a99;
+}
+
+.section .container{
+    margin: 30px 0;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section .container .list{
+    background-color: #2d2b38;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: fit-content;
+}
+
+.section.light .container .list{
+    background-color: #bdb3c1;
+}
+
+.section .container img{
+    width: 250px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.technologies svg{
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.links a{
+    display: inline-block;
+    margin-right: 10px;
+    background-color: var(--main-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: 1px solid var(--main-color);
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.section.light .container .links a{
+    color: #fff;
+}
+
+.section.light .container .links a:hover{
+    color: var(--main-dark);
+}
+
+.links a:hover{
+    background-color: inherit;
+}
+
+.links a:active{
+    box-shadow: 0 0 5px 2px var(--main-color);
+}

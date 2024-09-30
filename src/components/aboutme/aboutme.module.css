@@ -1,0 +1,43 @@
+.section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.section h1{
+    border-bottom: 2px solid #8c2a99;
+}
+
+.section p{
+    margin: 30px 0;
+}
+
+.social{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.social div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 55px;
+}
+
+.contact svg{
+    display: block;
+    font-size: 50px;
+    transition: 0.3s ease;
+}
+
+.social div .contact svg:hover{
+    color: #8c2a99;
+}
+
+@media (max-width: 350px){
+    .social{
+        gap: 15px;
+    }
+}

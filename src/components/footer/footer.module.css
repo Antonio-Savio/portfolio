@@ -1,0 +1,35 @@
+.footer{
+    margin: 30px 0;
+    text-align: center;
+    position: relative;
+}
+
+.footer a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 20px;
+    font-size: 18px;
+    animation: goToTop 0.5s infinite alternate;
+}
+
+.footer a:hover{
+    color: var(--main-color)
+}
+
+@-webkit-keyframes goToTop {
+    0% {
+        -webkit-transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(0.4em);
+    }
+}
+
+@media (max-width: 450px){
+    .footer p{
+        max-width: 240px;
+        margin: 0 auto;
+    }
+}

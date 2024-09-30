@@ -1,0 +1,133 @@
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: calc(100vh - 80px);
+    padding: 0 20px;
+    position: relative;
+}
+
+.globalButtons{
+    position: absolute;
+    top: 0;
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.globalButton svg {
+    transform: scale(1.4);
+}
+
+.profilepic{
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--main-color);
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.7);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 450px;
+}
+
+.anchor, .globalButton {
+    display: inline-block;
+    background-color: inherit;
+    padding: 10px 20px;
+    margin-right: 15px;
+    border-radius: 5px;
+    font-family: inherit;
+    outline: 1px solid #fff;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.section.light .anchor, 
+.section.light .globalButton{
+    outline-color: var(--main-dark);
+    color: var(--main-dark);
+}
+
+.section.light .anchor:hover, 
+.section.light .globalButton:hover{
+    background-color: var(--main-color);
+    outline-color: var(--main-color);
+    color: #fff;
+}
+
+.section .anchor:first-child{
+    background-color: var(--main-color);
+    outline: none;
+    color: #fff;
+}
+
+.anchor:hover, .globalButton:hover{
+    outline-color: var(--main-color);
+}
+
+.anchor:active, .globalButton:active{
+    box-shadow: 0 0 5px 2px var(--main-color);
+}
+
+.section .anchor:first-child:hover{
+    outline: 1px solid var(--main-color);
+    background-color: inherit;
+}
+
+.section.light .anchor:first-child:hover{
+    color: var(--main-dark);
+}
+
+.info h1{
+    font-size: 34px;
+}
+
+.info h4{
+    font-size: 22px;
+}
+
+@media (max-width: 810px){
+    .section{
+        gap: 10px;
+    }
+}
+
+@media (max-width: 700px){
+    .section{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .info{
+        align-items: center;
+    }
+
+    .info .anchors{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 350px){
+    .info h1{
+        font-size: 28px;
+    }
+    
+    .info h4{
+        font-size: 18px;
+    }
+
+    .profilepic{
+        margin-top: 30px;
+        width: 160px;
+        height: 160px;
+    }
+}
