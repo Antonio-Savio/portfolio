@@ -31,7 +31,7 @@ function AboutMe(){
 
     const controls = useAnimation();
     const { ref, inView } = useInView({
-        // triggerOnce: true,
+        triggerOnce: true,
         threshold: 0.1,
     });
 
@@ -54,9 +54,8 @@ function AboutMe(){
             }}
         >
             <h1>{translations[lang].title}</h1>
-            <p>
-                {translations[lang].desc}
-            </p>
+            
+            <p>{translations[lang].desc}</p>
 
             <div className={styles.social}>
                 <div>
