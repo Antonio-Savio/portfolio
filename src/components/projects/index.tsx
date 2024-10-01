@@ -13,7 +13,7 @@ function Projects(){
     const controls = useAnimation();
     const { ref, inView } = useInView({
         triggerOnce: true,
-        threshold: 0.1,
+        threshold: 0.05,
     });
 
     useEffect(() => {
@@ -37,8 +37,18 @@ function Projects(){
             <h1>{lang === 'pt' ? 'Projetos' : 'Projects'}</h1>
 
             <ul className={styles.container}>
-                {projects.map( (project) => (
-                    <li className={styles.list} key={project.id}>
+                {projects.map( (project, index) => (
+                    <motion.li 
+                        className={styles.list} 
+                        key={project.id}
+                        ref={ref}
+                        initial="hidden"
+                        animate={controls}
+                        variants={{
+                            hidden: { opacity: 0, y: 20 },
+                            visible: { opacity: 1, y: 0, transition: { delay: index * 0.6, duration: 0.8 } },
+                        }}
+                    >
                         <img src={project.imgSrc} alt={project.title[lang]} />
                         <h4>{project.title[lang]}</h4>
                         <p>{project.description[lang]}</p>
@@ -63,7 +73,7 @@ function Projects(){
                                 {lang === 'pt' ? 'Repositório' : 'Repository'}
                             </a>
                         </div>
-                    </li>
+                    </motion.li>
                 ))}
             </ul>
         </motion.section>
