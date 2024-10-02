@@ -116,7 +116,7 @@
     }
 }
 
-@media (max-width: 350px){
+@media (max-width: 380px){
     .info h1{
         font-size: 28px;
     }
