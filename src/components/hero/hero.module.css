@@ -131,3 +131,14 @@
         height: 160px;
     }
 }
+
+@media (max-height: 350px){
+    .section{
+        height: fit-content;
+        margin-bottom: 60px;
+    }
+
+    .profilepic{
+        margin-top: 70px;
+    }
+}
