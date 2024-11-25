@@ -27,16 +27,38 @@
     flex-direction: column;
     gap: 12px;
     height: fit-content;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.section .container .list:hover{
+    background-color: #2d2b3866;
 }
 
 .section.light .container .list{
     background-color: #bdb3c1;
 }
 
-.section .container img{
+.section.light .container .list:hover{
+    background-color: #a39ba8;
+}
+
+.section .container img {
     width: 250px;
     border-radius: 10px;
     width: 100%;
+    max-height: 134px;
+    object-fit: cover;
+}
+
+.section .container .description{
+    height: 72px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box; /* Define um contêiner flexível para texto */
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .technologies svg{
