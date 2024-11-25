@@ -1,16 +1,16 @@
-import { SiReact, SiTypescript, SiCss3, SiTailwindcss, SiStyledcomponents, SiVite } from "react-icons/si";
+import { SiReact, SiTypescript, SiCss3, SiTailwindcss, SiStyledcomponents, SiFirebase } from "react-icons/si";
 import WeatherGif from '../assets/desktop-weather.gif'
 import PokedexGif from '../assets/desktop-pokedex.gif'
 import CriptoGif from '../assets/desktop-version-cripto.gif'
 import SushiGif from '../assets/desktop-version-sushi.gif'
+import WebImoveisGif from '../assets/WebImoveis-gif.gif'
 
 interface Translations{
     pt: string;
     en: string;
 }
 
-interface Projects{
-    id: number;
+export interface Projects{
     imgSrc: string;
     title: Translations;
     description: Translations;
@@ -21,7 +21,21 @@ interface Projects{
 
 const projects: Projects[] = [
     {
-        id: 1,
+        imgSrc: WebImoveisGif,
+        title: {
+            pt: "WebImóveis",
+            en: "WebImóveis"
+        },
+        description: {
+            pt: "WebImóveis é uma plataforma onde você pode encontrar o seu imóvel ideal, ou publicar seu imóvel para venda ou aluguel. Use os filtros para encontrar apartamentos e casas em sua cidade. Você pode navegar até a página de detalhes e entrar em contato com o proprietário por um link do WhatsApp. Apenas usuários registrados podem acessar o painel e publicar imóveis para venda/aluguel.",
+            en: "WebImóveis is a platform where you can either find an ideal property for you, or publish your property for sale or rent. Use the filters to find apartaments and houses in your city. You can browse to the details page and contact the owner by a WhatsApp link. Only registered users are able to access dashboard and publish sale/rent property."
+        },
+        techs: [<SiReact/>, <SiTypescript/>, <SiTailwindcss/>, <SiFirebase/>],
+        deploy: "https://webimoveis.vercel.app",
+        repo: "https://github.com/Antonio-Savio/WebImoveis"
+    },
+    
+    {
         imgSrc: CriptoGif,
         title: {
             pt: "Criptoapp",
@@ -31,13 +45,12 @@ const projects: Projects[] = [
             pt: "Site que exibe informações sobre criptomoedas em formato de tabela. Permite ordenar por valor de mercado, preço em dólares, variação em 24 horas, e volume negociado, além de pesquisar por criptomoedas específicas.",
             en: "A website that displays information about cryptocurrencies in a table format. Allows sorting by market value, price in dollars, 24-hour variation, and traded volume, as well as searching for specific cryptocurrencies."
         },
-        techs: [<SiReact/>, <SiTypescript/>, <SiCss3/>, <SiVite/>],
+        techs: [<SiReact/>, <SiTypescript/>, <SiCss3/>],
         deploy: "https://criptoapp-ten.vercel.app/",
         repo: "https://github.com/Antonio-Savio/criptoapp"
     },
     
     {
-        id: 2,
         imgSrc: WeatherGif,
         title: {
             pt: "Aplicativo de Clima",
@@ -53,7 +66,6 @@ const projects: Projects[] = [
     },
 
     {
-        id: 3,
         imgSrc: PokedexGif,
         title: {
             pt: "Pokédex",
@@ -69,7 +81,6 @@ const projects: Projects[] = [
     },
 
     {
-        id: 4,
         imgSrc: SushiGif,
         title: {
             pt: "Landing Page",
