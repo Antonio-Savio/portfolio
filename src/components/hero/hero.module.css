@@ -1,39 +1,45 @@
 .section{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px;
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
     padding: 0 20px;
-    position: relative;
 }
 
 .globalButtons{
-    position: absolute;
-    top: 0;
-    margin-top: 15px;
     display: flex;
     gap: 10px;
+    margin: 20px 0;
 }
 
 .globalButton svg {
     transform: scale(1.4);
 }
 
-.profilepic{
+.imgContainer{
     width: 270px;
     height: 270px;
     border-radius: 50%;
-    object-fit: cover;
+    background-image: url("../../assets/profile.jpg");
+    background-position: center center;
+    background-size: cover;
     border: 5px solid var(--main-color);
     box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.7);
+}
+
+.content{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 .info{
     display: flex;
     flex-direction: column;
     gap: 14px;
-    max-width: 450px;
 }
 
 .anchor, .globalButton {
@@ -92,14 +98,8 @@
     font-size: 22px;
 }
 
-@media (max-width: 810px){
-    .section{
-        gap: 10px;
-    }
-}
-
 @media (max-width: 700px){
-    .section{
+    .section .content{
         flex-direction: column-reverse;
         gap: 20px;
     }
@@ -117,6 +117,10 @@
 }
 
 @media (max-width: 380px){
+    .section .content{
+        gap: 0px;
+    }
+    
     .info h1{
         font-size: 28px;
     }
@@ -125,20 +129,25 @@
         font-size: 18px;
     }
 
-    .profilepic{
-        margin-top: 30px;
-        width: 160px;
-        height: 160px;
+    .imgContainer{
+        width: 200px;
+        height: 200px;
     }
 }
 
-@media (max-height: 350px){
+@media (max-width: 350px){
+    .section{
+        margin-bottom: 10px;
+    }
+
+    .globalButtons{
+        margin: 10px 0;
+    }
+}
+
+@media (max-height: 450px){
     .section{
         height: fit-content;
         margin-bottom: 60px;
-    }
-
-    .profilepic{
-        margin-top: 70px;
     }
 }

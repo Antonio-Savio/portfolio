@@ -1,5 +1,4 @@
 import { useContext } from 'react'
-import ProfilePic from '../../assets/profile.jpg'
 import styles from './hero.module.css'
 import Curriculo from '../../assets/curriculo-antonio-savio.pdf'
 import { LanguageContext } from '../../contexts/language'
@@ -35,22 +34,24 @@ function Hero() {
           </button>
         </div>
 
-        <div className={styles.info}>
-            <h1>Antonio Sávio</h1>
-            <h4>{translations[lang].position}</h4>
-            
-            <div className={styles.anchors}>
-              <a href={Curriculo} download="curriculo-antonio-savio.pdf" className={styles.anchor}>
-                {translations[lang].cv}
-              </a>
-            
-              <a href="mailto:savio.aragao@hotmail.com" className={styles.anchor}>
-                {translations[lang].contact}
-              </a>
-            </div>
-        </div>
+        <div className={styles.content}>
+          <div className={styles.info}>
+              <h1>Antonio Sávio</h1>
+              <h4>{translations[lang].position}</h4>
+              
+              <div className={styles.anchors}>
+                <a href={Curriculo} download="curriculo-antonio-savio.pdf" className={styles.anchor}>
+                  {translations[lang].cv}
+                </a>
+              
+                <a href="mailto:savio.aragao@hotmail.com" className={styles.anchor}>
+                  {translations[lang].contact}
+                </a>
+              </div>
+          </div>
 
-        <img src={ProfilePic} alt="Foto de perfil" className={styles.profilepic} />
+          <div className={styles.imgContainer}></div>
+        </div>
     </section>
   )
 }
