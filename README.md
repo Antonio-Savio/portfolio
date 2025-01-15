@@ -1,50 +1,18 @@
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<ul>
+  <li><a href="#pt">🇧🇷 Português</a></li>
+  <li><a href="#eng">🇬🇧 English</a></li>
+</ul>
 
-Currently, two official plugins are available:
+<section id="pt">
+  <p>Bem-vindo ao meu portfólio! Aqui você encontrará uma visão geral sobre mim, minhas habilidades técnicas e uma seleção de projetos pessoais de desenvolvimento web. Na sessão de Projetos, estão listados trabalhos que refletem aplicações de mundo real, onde utilizei tecnologias como React, TypeScript e Next.js. Cada projeto foi desenvolvido com foco em criar softwares funcionais e eficientes aliados a uma interface intuitiva e responsiva, mostrando meu compromisso com a qualidade e a constante evolução no desenvolvimento web.</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  <p>Acesse o link abaixo e sinta-se à vontade para explorar meus projetos e conhecer mais sobre meu trabalho. Caso tenha interesse em colaborar ou discutir novas oportunidades, não hesite em entrar em contato!</p>
 
-## Expanding the ESLint configuration
+  ## 🌎 Acesse meu portfólio
+  [Portfólio - Antonio Sávio](https://portfolio-antonio-savios-projects.vercel.app)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+  ## 💻 Visão Geral
+  <img src="src/assets/desktop_portfolio.png">
+</section>
