@@ -1,9 +1,11 @@
-# Portfolio
+<h1 align="center"> Portfólio</h1>
 
 <ul>
   <li><a href="#pt">🇧🇷 Português</a></li>
   <li><a href="#eng">🇬🇧 English</a></li>
 </ul>
+
+<h3 align="center">Versão em português</h3>
 
 <section id="pt">
   <p>Bem-vindo ao meu portfólio! Aqui você encontrará uma visão geral sobre mim, minhas habilidades técnicas e uma seleção de projetos pessoais de desenvolvimento web. Na sessão de Projetos, estão listados trabalhos que refletem aplicações de mundo real, onde utilizei tecnologias como React, TypeScript e Next.js. Cada projeto foi desenvolvido com foco em criar softwares funcionais e eficientes aliados a uma interface intuitiva e responsiva, mostrando meu compromisso com a qualidade e a constante evolução no desenvolvimento web.</p>
@@ -68,6 +70,13 @@
 
   Você é livre para usar, modificar e distribuir este software para fins pessoais e comerciais, desde que a licença original e o aviso de direitos autorais sejam incluídos. Não há garantia para o código fornecido, e o autor não é responsável por quaisquer problemas decorrentes do uso deste software.
 </section>
+
+<br/>
+
+---
+<br/>
+
+<h3 align="center">English version</h3>
 
 <section id="eng">
   <p>Welcome to my portfolio! Here you will find an overview of me, my technical skills, and a selection of personal web development projects. In the Projects section, you will see works that reflect real-world applications, where I have used technologies such as React, TypeScript, and Next.js. Each project was developed with a focus on creating functional and efficient software paired with an intuitive and responsive interface, showcasing my commitment to quality and continuous growth in web development.</p>
