@@ -21,11 +21,11 @@ function AboutMe(){
     const translations: Translations = {
         pt: {
             title: 'Sobre mim',
-            desc: 'Sou estudante de Análise e Desenvolvimento de Sistemas, atualmente no 5º período, com 2 anos de experiência em projetos pessoais de desenvolvimento web front-end. Foco em criar soluções que combinam design responsivo com interfaces funcionais, intuitivas e envolventes. Sou comprometido com o aprendizado contínuo e a solução de problemas.'
+            desc: 'Sou Antonio Sávio, desenvolvedor web apaixonado por transformar ideias em soluções práticas através da programação. Como estudante de Análise e Desenvolvimento de Sistemas no 5º período e com 2 anos de experiência em projetos de desenvolvimento web full-stack, com ênfase em front-end, foco em integrar softwares funcionais e eficientes a uma interface intuitiva e responsiva, buscando uma boa experiência de usuário. Valorizo o aprendizado contínuo e a solução de problemas, sempre buscando inovar e aprimorar minhas habilidades a cada novo projeto.'
         },
         en: {
             title: 'About me',
-            desc: 'I am a Systems Analysis and Development student, currently in the 5th semester, with 2 years of experience in personal web development projects. I focus on creating solutions that combine responsive design with functional, intuitive, and engaging interfaces. I am committed to continuous learning and problem-solving.'
+            desc: 'I am Antonio Sávio, a web developer passionate about transforming ideas into practical solutions through programming. As a student of Systems Analysis and Development in my 5th semester, with 2 years of experience in full-stack web development projects, with an emphasis on front-end, I focus on integrating functional and efficient software with an intuitive and responsive interface, aiming to provide a great user experience. I value continuous learning and problem-solving, always seeking to innovate and enhance my skills with each new project.'
         }
     }
 
