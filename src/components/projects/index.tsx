@@ -57,9 +57,11 @@ function Projects(){
                                 visible: { opacity: 1, y: 0, transition: { delay: index * 0.6, duration: 0.8 } },
                             }}
                         >
+                            <h4 className={styles.projectTitle}>
+                                {project.title[lang]}
+                            </h4>
                             <img src={project.imgSrc} alt={project.title[lang]} />
-                            <h4>{project.title[lang]}</h4>
-                            <p className={styles.description}>{project.description[lang]}</p>
+                            <section className={styles.description}>{project.description[lang]}</section>
                             <p className={styles.technologies}>
                                 {project.techs.map((tech, id) => (
                                     <span key={id}>{tech}</span>

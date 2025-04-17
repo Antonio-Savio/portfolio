@@ -8,7 +8,7 @@ import { useInView } from 'react-intersection-observer';
 
 interface AboutMeTranslations{
     title: string;
-    desc: string;
+    desc: JSX.Element;
 }
 
 interface Translations{
@@ -21,11 +21,36 @@ function AboutMe(){
     const translations: Translations = {
         pt: {
             title: 'Sobre mim',
-            desc: 'Sou Antonio Sávio, desenvolvedor web apaixonado por transformar ideias em soluções práticas através da programação. Como estudante de Análise e Desenvolvimento de Sistemas no 5º período e com 2 anos de experiência em projetos de desenvolvimento web full-stack, com ênfase em front-end, foco em integrar softwares funcionais e eficientes a uma interface intuitiva e responsiva, buscando uma boa experiência de usuário. Valorizo o aprendizado contínuo e a solução de problemas, sempre buscando inovar e aprimorar minhas habilidades a cada novo projeto.'
+            desc: (<>
+                <p>
+                    Olá! Sou Antonio Sávio, <strong>Desenvolvedor Full-Stack</strong> com 2 anos de experiência e formação em <strong>Análise e Desenvolvimento de Sistemas</strong>. Tenho um foco especial no front-end, mas atuo na construção completa de projetos.
+                </p>
+                <ul>
+                    Minha expertise técnica abrange:
+                    <li><strong>Front-end:</strong> Criação de interfaces web modernas, responsivas e intuitivas com <strong>TypeScript, React e Next.js</strong>.</li>
+                    <li><strong>Back-end:</strong> Desenvolvimento de APIs e lógicas de negócio robustas e eficientes utilizando <strong>Node.js, TypeScript, PostgreSQL e MongoDB</strong>.</li>
+                </ul>
+                <p>
+                    Sou apaixonado por transformar ideias em produtos digitais funcionais, centrados na experiência do usuário. Estou em constante aprendizado, sempre buscando inovações para enfrentar desafios e entregar valor real através do código.
+                </p>
+            </>)
         },
         en: {
             title: 'About me',
-            desc: 'I am Antonio Sávio, a web developer passionate about transforming ideas into practical solutions through programming. As a student of Systems Analysis and Development in my 5th semester, with 2 years of experience in full-stack web development projects, with an emphasis on front-end, I focus on integrating functional and efficient software with an intuitive and responsive interface, aiming to provide a great user experience. I value continuous learning and problem-solving, always seeking to innovate and enhance my skills with each new project.'
+            desc: (<>
+                <p>
+                    Hello! I'm Antonio Sávio, a <strong>Web Developer</strong> with a degree in <strong>Systems Analysis and Development</strong> and 2 years of experience building full-stack projects, specializing in the front-end.
+                </p>
+                <p>
+                    I develop modern, high-performance web applications using <strong>TypeScript</strong>, <strong>Next.js</strong>, and <strong>React</strong> to create intuitive and responsive interfaces. On the back-end, I work with <strong>Node.js</strong>, <strong>PostgreSQL</strong>, and <strong>MongoDB</strong> to ensure robust and efficient logic.
+                </p>
+                <p>
+                    My passion is transforming ideas into functional, user-centric digital products, effectively connecting design and technology.
+                </p>
+                <p>
+                    I am constantly learning, always seeking innovations to tackle challenges and deliver real value through code.
+                </p>
+            </>)
         }
     }
 
@@ -55,7 +80,7 @@ function AboutMe(){
         >
             <h1>{translations[lang].title}</h1>
             
-            <p>{translations[lang].desc}</p>
+            <div className={styles.desc}>{translations[lang].desc}</div>
 
             <div className={styles.social}>
                 <div>

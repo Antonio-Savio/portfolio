@@ -22,7 +22,7 @@
     width: 270px;
     height: 270px;
     border-radius: 50%;
-    background-image: url("../../assets/profile.jpg");
+    background-image: url("../../assets/profile.webp");
     background-position: center center;
     background-size: cover;
     border: 5px solid var(--main-color);

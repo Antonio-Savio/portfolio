@@ -18,13 +18,21 @@ export function Modal({ prop, lang, onClose, darkMode }: ModalProps){
             <div className={`${styles.container} ${darkMode ? '' : styles.light}`}>
                 <button onClick={onClose}><IoCloseSharp/></button>
                 <h1>{prop.title[lang]}</h1>
-                <img src={prop.imgSrc} alt={prop.title[lang]} />
-                <p>{prop.description[lang]}</p>
-                <div className={styles.technologies}>
+                {prop.video ? (
+                    <video controls width="100%">
+                        <source src={prop.video} type="video/webm" />
+                    </video>
+                ): (
+                    <img src={prop.imgSrc} alt={prop.title[lang]} />
+                )}
+                <section className={styles.desc}>
+                    {prop.description[lang]}
+                </section>
+                <ul className={styles.technologies}>
                     {prop.techs.map((tech, id) => (
-                        <span key={id}>{tech}</span>
+                        <li key={id}>{tech}</li>
                     ))}
-                </div>
+                </ul>
                 <div className={styles.links} onClick={(e) => e.stopPropagation()}>
                     <a 
                         href={prop.deploy}

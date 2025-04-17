@@ -10,13 +10,13 @@ function Hero() {
   const { toggleTheme, isDark } = useContext(ThemeContext)
   const translations = {
     pt: {
-      position: 'Desenvolvedor Front-end',
-      cv: 'Baixar currículo',
+      position: 'Desenvolvedor Full-Stack',
+      cv: 'Baixar Full-Stack',
       contact: 'Entrar em Contato'
     },
 
     en: {
-      position: 'Front-end Developer',
+      position: 'Full-Stack Developer',
       cv: 'Download CV',
       contact: 'Contact Me'
     }
@@ -25,11 +25,19 @@ function Hero() {
   return (
     <section className={`${styles.section} ${isDark ? '' : styles.light}`}>
         <div className={styles.globalButtons}>
-          <button className={styles.globalButton} onClick={() => toggleLanguage()}>
+          <button 
+            className={styles.globalButton} 
+            onClick={() => toggleLanguage()}
+            title={lang === 'pt' ? 'Mudar para inglês' : 'Toggle language to portuguese'}
+          >
             {lang === "pt" ? "EN" : "PT"} 
           </button>
 
-          <button className={styles.globalButton} onClick={() => toggleTheme()}>
+          <button 
+            className={styles.globalButton} 
+            onClick={() => toggleTheme()}
+            title={lang === 'pt' ? 'Alterar tema' : 'Toggle theme'}
+          >
             {isDark ? <IoSunnyOutline /> : <IoMoonOutline/>}
           </button>
         </div>

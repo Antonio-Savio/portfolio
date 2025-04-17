@@ -29,10 +29,29 @@
     max-height: 90vh;
     z-index: 10;
     overflow: auto;
+    line-height: 1.6rem;
 }
 
 .container h1 {
     font-size: 1.5em;
+}
+
+.container .desc ul {
+    margin: 5px 0;
+    margin-left: 25px;
+    list-style: disc;
+}
+
+.container .desc ul li {
+    margin-bottom: 3px;
+}
+
+.container .desc a{
+    color: #4e4eff;
+}
+
+.container .desc a:hover{
+    text-decoration: underline;
 }
 
 .container img{
@@ -40,6 +59,27 @@
     border-radius: 10px;
     width: 100%;
     object-fit: cover;
+}
+
+.container video{
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.technologies {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.technologies li{
+    margin-right: 10px;
+    line-height: 0;
+}
+
+.technologies svg{
+    font-size: 26px;
 }
 
 .container button {
@@ -55,7 +95,6 @@
 }
 
 .links a{
-    margin-top: 10px;
     display: inline-block;
     margin-right: 10px;
     background-color: var(--main-color);
@@ -92,10 +131,4 @@
 
 .container.light button {
     color: inherit;
-}
-
-.technologies svg{
-    font-size: 24px;
-    margin-right: 8px;
-    margin-top: 10px;
 }

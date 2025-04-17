@@ -40,8 +40,8 @@ function Skills(){
             <p>{lang === 'pt' ? 'Habilidades Técnicas' : 'Hard Skills'}</p>
 
             <ul className={styles.container}>
-                {skills.map( (skill) => (
-                    <li key={skill.id} className={styles.skill}>
+                {skills.map( (skill, index) => (
+                    <li key={index} className={styles.skill}>
                         <div className={styles.icon}>{skill.icone}</div>
                         <div className={styles.nome}>{skill.nome}</div>
                     </li>

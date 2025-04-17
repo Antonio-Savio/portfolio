@@ -39,7 +39,7 @@ function Header() {
 
     return (
         <header className={styles.header} id='header'>
-            <a href="/">{translations[lang].port}</a>
+            <div>{translations[lang].port}</div>
 
             {isOpen ? (
                 <IoMdClose onClick={() => setIsOpen(prev => !prev)} />
@@ -47,14 +47,14 @@ function Header() {
                 <RiMenu3Fill onClick={() => setIsOpen(prev => !prev)} />
             )}
 
-            <div 
+            <nav 
                 className={`${styles.navigation} ${isDark ? '' : styles.light} ${isOpen ? styles.opened : ''}`}
                 onClick={() => setIsOpen(false)}
             >
                 <a href="#sobre">{translations[lang].about}</a>
                 <a href="#habilidades">{translations[lang].skills}</a>
                 <a href="#projetos">{translations[lang].project}</a>
-            </div>
+            </nav>
         </header>
     )
   }
