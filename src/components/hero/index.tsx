@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import styles from './hero.module.css'
 import Curriculo from '../../assets/curriculo-antonio-savio.pdf'
+import ProfilePic from '../../assets/profile.webp'
 import { LanguageContext } from '../../contexts/language'
 import { ThemeContext } from '../../contexts/theme'
 import { IoSunnyOutline, IoMoonOutline } from "react-icons/io5";
@@ -58,7 +59,9 @@ function Hero() {
               </div>
           </div>
 
-          <div className={styles.imgContainer}></div>
+          <div className={styles.imgContainer}>
+            <img src={ProfilePic} alt="Foto de perfil" width='270px' height='270px' />
+          </div>
         </div>
     </section>
   )

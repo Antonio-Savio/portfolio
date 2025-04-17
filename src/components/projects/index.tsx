@@ -60,7 +60,7 @@ function Projects(){
                             <h4 className={styles.projectTitle}>
                                 {project.title[lang]}
                             </h4>
-                            <img src={project.imgSrc} alt={project.title[lang]} />
+                            <img src={project.imgSrc} alt={project.title[lang]} loading='lazy' />
                             <section className={styles.description}>{project.description[lang]}</section>
                             <p className={styles.technologies}>
                                 {project.techs.map((tech, id) => (
