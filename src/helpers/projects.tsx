@@ -269,9 +269,10 @@ const projects: Projects[] = [
                 PopcornGuide é uma <strong>Plataforma web interativa</strong> desenvolvida para explorar filmes em destaque, construída com Next.js e Tailwind CSS. Funcionalidades incluem:
                 <ul>
                     <li><strong>Consumo de API</strong> externa (TMDB) para listagem dinâmica de filmes.</li>
+                    <li><strong>Autenticação social</strong> (Google/Twitter via NextAuth.js) para salvar e gerenciar listas de filmes favoritos.</li>
+                    <li><strong>Salvar em favoritos:</strong> usuários autenticados podem adicionar filmes na lista de favoritos. O armazenamento foi feito pelo Firebase <i>Firestore</i>.</li>
                     <li><strong>Paginação</strong> eficiente (20 filmes por página) para navegação otimizada.</li>
                     <li><strong>Busca por título</strong> para encontrar filmes específicos rapidamente.</li>
-                    <li><strong>Autenticação social</strong> (Google/Twitter via NextAuth.js) para salvar e gerenciar listas de filmes favoritos.</li>
                     <li><strong>SEO otimizado</strong> com uso de metadados dinâmicos para melhor ranquamento nos motores de busca.</li>
                 </ul>
             </>),
@@ -279,9 +280,10 @@ const projects: Projects[] = [
                 PopcornGuide is an <strong>Interactive web platform</strong> developed for exploring trending movies, built with Next.js and Tailwind CSS. Features include:
                 <ul>
                     <li><strong>Consumption of external API</strong> (TMDB) for dynamic movie listings.</li>
+                    <li><strong>Social authentication</strong> (Google/Twitter via NextAuth.js) allowing users to save and manage favorite movie lists.</li>
+                    <li><strong>Save to Favorites:</strong> Authenticated users can add movies to their favorites list. Storage is done by Firebase <i>Firestore</i>.</li>
                     <li>Efficient <strong>pagination</strong> (20 movies per page) for optimized browsing.</li>
                     <li><strong>Title search</strong> functionality to quickly find specific movies.</li>
-                    <li><strong>Social authentication</strong> (Google/Twitter via NextAuth.js) allowing users to save and manage favorite movie lists.</li>
                     <li><strong>SEO optimized</strong> with the use of dynamic metadata for better ranking in search engines.</li>
                 </ul>
             </>)
