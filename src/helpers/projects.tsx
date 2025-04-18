@@ -1,18 +1,30 @@
 import { SiReact, SiTypescript, SiCss3, SiTailwindcss, SiStyledcomponents, SiNodedotjs, SiPostgresql, SiExpress, SiNextdotjs, SiPrisma, SiExpo, SiMongodb, SiChakraui, SiJest } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
-import WeatherGif from '../assets/desktop-weather.webp'
-import PokedexGif from '../assets/desktop-pokedex.webp'
-import CriptoGif from '../assets/desktop-version-criptoapp.webp'
-import SushiGif from '../assets/shiawase-sushi.webp'
-import WebImoveisGif from '../assets/webimoveis.webp'
-import PopcornguideGif from '../assets/popcornguide.webp'
-import GatinhosGif from '../assets/gatinhos-cajueiros.webp'
-import AdvGif from '../assets/advcontrol.webp'
-import delicatessenGif from '../assets/arte-del-gusto.webp'
-import BeautyManagerGif from '../assets/beauty-manager.webp'
+import WeatherGif from '../assets/animated-images/desktop-weather.webp'
+import PokedexGif from '../assets/animated-images/desktop-pokedex.webp'
+import CriptoGif from '../assets/animated-images/desktop-version-criptoapp.webp'
+import SushiGif from '../assets/animated-images/shiawase-sushi.webp'
+import WebImoveisGif from '../assets/animated-images/webimoveis.webp'
+import PopcornguideGif from '../assets/animated-images/popcornguide.webp'
+import GatinhosGif from '../assets/animated-images/gatinhos-cajueiros.webp'
+import AdvGif from '../assets/animated-images/advcontrol.webp'
+import delicatessenGif from '../assets/animated-images/arte-del-gusto.webp'
+import BeautyManagerGif from '../assets/animated-images/beauty-manager.webp'
 
-import BeautyManagerVideo from '../assets/beautymanager-video.webm'
-import delicatessenVideo from '../assets/arte-del-gusto-video.webm'
+import BeautyManagerVideo from '../assets/videos/beautymanager-video.webm'
+import delicatessenVideo from '../assets/videos/arte-del-gusto-video.webm'
+
+import WeatherFrame from '../assets/images/weather_first_frame.png'
+import PokedexFrame from '../assets/images/pokedex_first_frame.png'
+import CriptoFrame from '../assets/images/criptoapp_first_frame.png'
+import SushiFrame from '../assets/images/shiawase-sushi_first_frame.png'
+import WebImoveisFrame from '../assets/images/first_frame_webimoveis.png'
+import PopcornFrame from '../assets/images/popcornguide_first_frame.png'
+import GatinhosFrame from '../assets/images/gatinhos_first_frame.png'
+import AdvFrame from '../assets/images/advcontrol_first_frame.png'
+import delicatessenFrame from '../assets/images/arte-del-gusto_first_frame.png'
+import BeautyManagerFrame from '../assets/images/beauty-manager_first_frame.png'
+
 
 interface Translations{
     pt: string;
@@ -25,6 +37,7 @@ interface RichTranslations {
 }
 
 export interface Projects{
+    first_frame: string;
     imgSrc: string;
     video?: string;
     title: Translations;
@@ -36,6 +49,7 @@ export interface Projects{
 
 const projects: Projects[] = [
     {
+        first_frame: BeautyManagerFrame,
         imgSrc: BeautyManagerGif,
         video: BeautyManagerVideo,
         title: {
@@ -87,6 +101,7 @@ const projects: Projects[] = [
     },
 
     {
+        first_frame: delicatessenFrame,
         imgSrc: delicatessenGif,
         video: delicatessenVideo,
         title: {
@@ -153,6 +168,7 @@ const projects: Projects[] = [
     },
 
     {
+        first_frame: AdvFrame,
         imgSrc: AdvGif,
         title: {
             pt: "Plataforma de Gestão Jurídica",
@@ -185,6 +201,7 @@ const projects: Projects[] = [
     },
 
     {
+        first_frame: GatinhosFrame,
         imgSrc: GatinhosGif,
         title: {
             pt: "Website para Projeto Voluntário",
@@ -224,6 +241,7 @@ const projects: Projects[] = [
     },
 
     {
+        first_frame: WebImoveisFrame,
         imgSrc: WebImoveisGif,
         title: {
             pt: "WebImóveis: Marketplace Imobiliário",
@@ -259,6 +277,7 @@ const projects: Projects[] = [
     },
 
     {
+        first_frame: PopcornFrame,
         imgSrc: PopcornguideGif,
         title: {
             pt: "Plataforma de filmes",
@@ -294,6 +313,7 @@ const projects: Projects[] = [
     },
     
     {
+        first_frame: CriptoFrame,
         imgSrc: CriptoGif,
         title: {
             pt: "Criptoapp: Rastreador de Mercado de Criptomoedas",
@@ -309,6 +329,7 @@ const projects: Projects[] = [
     },
     
     {
+        first_frame: WeatherFrame,
         imgSrc: WeatherGif,
         title: {
             pt: "Aplicativo Web de Clima",
@@ -324,6 +345,7 @@ const projects: Projects[] = [
     },
 
     {
+        first_frame: SushiFrame,
         imgSrc: SushiGif,
         title: {
             pt: "Landing Page",
@@ -339,6 +361,7 @@ const projects: Projects[] = [
     },
 
     {
+        first_frame: PokedexFrame,
         imgSrc: PokedexGif,
         title: {
             pt: "Pokédex",

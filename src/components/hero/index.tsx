@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import styles from './hero.module.css'
-import Curriculo from '../../assets/curriculo-antonio-savio.pdf'
-import ProfilePic from '../../assets/profile.webp'
+import Curriculo from '../../assets/files/curriculo-antonio-savio.pdf'
+import ProfilePic from '../../assets/images/profile.webp'
 import { LanguageContext } from '../../contexts/language'
 import { ThemeContext } from '../../contexts/theme'
 import { IoSunnyOutline, IoMoonOutline } from "react-icons/io5";
@@ -12,7 +12,7 @@ function Hero() {
   const translations = {
     pt: {
       position: 'Desenvolvedor Full-Stack',
-      cv: 'Baixar Full-Stack',
+      cv: 'Baixar Currículo',
       contact: 'Entrar em Contato'
     },
 
