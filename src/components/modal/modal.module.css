@@ -26,7 +26,7 @@
     background-color: #2d2b38;
     margin: 20px;
     max-width: 720px;
-    max-height: 90vh;
+    max-height: 80vh;
     z-index: 10;
     overflow: auto;
     line-height: 1.6rem;
@@ -68,6 +68,7 @@
 
 .technologies {
     margin: 15px 0;
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     list-style: none;
@@ -131,4 +132,10 @@
 
 .container.light button {
     color: inherit;
+}
+
+@media (max-width: 350px){
+    .links a:last-child{
+        margin-top: 10px;
+    }
 }
