@@ -36,6 +36,10 @@
     font-size: 1.5em;
 }
 
+.container .desc{
+    font-size: 1rem;
+}
+
 .container .desc ul {
     margin: 5px 0;
     margin-left: 25px;
@@ -54,11 +58,29 @@
     text-decoration: underline;
 }
 
-.container img{
+.container .imgContainer{
+    max-height: 300px;
+    overflow: hidden;
     margin: 10px 0;
-    border-radius: 10px;
+    line-height: 0;
+}
+
+.container img{
     width: 100%;
     object-fit: cover;
+    border-radius: 10px;
+}
+
+.container .load{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.container .load .loadIcon{
+    animation: spin 1s linear infinite;
 }
 
 .container video{
@@ -137,5 +159,11 @@
 @media (max-width: 350px){
     .links a:last-child{
         margin-top: 10px;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
     }
 }
