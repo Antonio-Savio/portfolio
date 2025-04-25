@@ -86,8 +86,7 @@
   [Portfolio - Antonio Sávio](https://portfolio-antonio-savios-projects.vercel.app)
 
   ## 💻 Overview
-  <img src="src/assets//desktop_portfolio.png" alt="portfolio preview">
-  <img src="src/assets/desktop_portfolio_2.png" alt="portfolio preview">
+  <img src="src/assets/animated-images/portfolio.webp" alt="portfolio preview">
 
   ## ✅ Features
   - Navigation links for the sections of the page.
