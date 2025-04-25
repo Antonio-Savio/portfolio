@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import styles from './hero.module.css'
-import Curriculo from '../../assets/files/curriculo-antonio-savio.pdf'
+import Curriculo from '../../assets/files/Antonio-Savio-Curriculo-Dev-2025.pdf'
 import ProfilePic from '../../assets/images/profile.webp'
 import { LanguageContext } from '../../contexts/language'
 import { ThemeContext } from '../../contexts/theme'
